@@ -16,7 +16,7 @@ z = (xslope*x) + (yslope*y) + (zoffset) + (noise);
 % Lse Fitting
 A = [x y ones(NoD,1)];
 b = z;
-xlse = inv(A'*A)*A'*b
+xlse = inv(A'*A)*A'*b;
 residue = b - A*xlse;
 
 % Fitted Model Plot
@@ -28,3 +28,6 @@ tspan = linspace(0,1,10)';
 [xx,yy] = meshgrid(tspan);
 zz = xlse(1)*xx + xlse(2)*yy + xlse(3);  % Fitted Plane
 surf(xx,yy,zz,FaceColor="r",FaceAlpha=0.25,EdgeColor="k")
+
+
+
