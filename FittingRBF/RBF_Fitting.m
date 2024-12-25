@@ -10,7 +10,6 @@ a3 = radbas(x+2);
 rand_bias = 0.5*rand;
 final = 2*a1 + 3*a2 + 4*a3 + rand_bias;  % Synthetic Data
 
-
 % Find parameter via Least Squers
 b = final;
 A = [a1 a2 a3 ones(size(x,1),1)];   % Regressor Matrix
@@ -26,3 +25,29 @@ plot(x,a1,'b--')
 plot(x,a2,'b--')
 plot(x,a3,'b--')
 legend("Original Data","Fitted Function","Basis Function","Basis Function","Basis Function")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
